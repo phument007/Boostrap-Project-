@@ -63,5 +63,50 @@ ul > li {
 .nav-link {
     font-weight: bold;
 }
+/* Navbar End */
+
+/* Slider Start */
+.slider {
+    width: 100%;
+    height: 850px;
+    position: relative;
+
+
+    background-color: var(--color--luminous-vivid-orange);
+}
+.slider > img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider > .show-about {
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    padding: 10px 20px;
+    background-color: var(--color--white);
+}
+.show-about > .title {
+    font-size: 80px;
+}
+
+
+
+/* Slider End */
+
+
+
+
+/* Responsive Start  */
+
+/* md screen start */
+
+
+/* md Screen end */
+
+
+/* Responsive End */
 
 
