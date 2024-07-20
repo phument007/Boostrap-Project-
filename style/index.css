@@ -2,6 +2,7 @@
     --color--black: #000000;
     --color--cyan-bluish-gray: #abb8c3;
     --color--white: #ffffff;
+    --color--white-old: rgb(249, 246, 246);
     --color--pale-pink: #f78da7;
     --color--vivid-red: #cf2e2e;
     --color--luminous-vivid-orange: #ff6900;
@@ -11,13 +12,12 @@
     --color--pale-cyan-blue: #8ed1fc;
     --color--vivid-cyan-blue: #0693e3;
     --color--vivid-purple: #9b51e0;
-
-   
 }
 
 ::selection {
     background-color: var(--color--luminous-vivid-orange);
     color: var(--color--white);
+    
 }
 body{
     width: 100%;
@@ -42,7 +42,7 @@ ul > li {
 /* Disign Start */
 
 /* Header Start */
-.header {
+header.header {
     background-color: var(--color--cyan-bluish-gray);
 }
 /* Header End */
@@ -110,20 +110,19 @@ ul > li {
 .about-us {
     width: 70%;
     height:780px;
-   
-    
     margin: auto;
-    
 }
+
+
+.about-us > .bottom > .show-about-us{
+    padding: 100px 50px;
+}
+
 .about-us > .header > .logo,
 .about-us > .header > .logo-card{
     height: 100px;
-    background-color: var(--color--white);
     border: none;
 }
-
-
-
 
 .header > .logo > .card ,
 .header > .logo-card > .card{
@@ -140,9 +139,50 @@ ul > li {
     
 }
 
-
-
 /* About Us End */
+
+/* About shoes sart */
+ 
+.about-shoes {
+    width: 100%;
+    height: 850px;
+    margin-top: 150px;
+    padding: 100px 280px;
+    background-color: var(--color--white-old); 
+}
+
+.about-shoes > .show-shoes{
+    margin-top: 80px;
+}
+
+.card {
+    background-color: var(--color--white-old) !important;
+    border: none !important;
+}
+
+.about-shoes > .show-shoes > .show-img > .card > img {
+    width: 80%;
+    height: 460px;
+    margin: auto;
+}
+
+.about-shoes-top > .description {
+    padding: 10px 300px;
+}
+
+/* About shoes end */
+
+
+
+/* Best Products start */
+.best-products {
+    width: 70%;
+    height: 850px; 
+    margin: auto;
+    margin-top: 100px;
+    background-color: #fcb900;
+}
+/* Best Products end */
 
 
 
@@ -150,7 +190,10 @@ ul > li {
 /* Responsive Start  */
 
 /* md screen start */
-@media screen and (min-width:768px) and (max-width:884px) {
+@media screen and (min-width:767px) and (max-width:884px) {
+    .main-content {
+      width: 100%;
+    }
     /* Slider Start */
     .slider {
         width: 100%;
@@ -175,12 +218,18 @@ ul > li {
    /* About us start */
    .about-us {
      width: 97%;
-     height:860px;
+     height:670px;
      margin: auto;
+     background-color: #00d084;
     }
+
+    .about-us > .bottom > .show-about-us{
+       padding: 0px 20px;
+    }
+
     .about-us > .header > .logo {
      height: 50px;
-     width: 152.7px;
+     width: 143px;
      background-color: var(--color--white); 
     }
 
@@ -194,6 +243,37 @@ ul > li {
     }
 
    /* About us end */
+
+
+   /* About shoes sart */
+ 
+    .about-shoes {
+        width: 100%;
+        height: 750px;
+        margin-top: 20px;
+        padding: 0;
+        background-color: var(--color--white-old); 
+    }
+
+    .about-shoes > .show-shoes{
+        margin-top: 40px;
+    }
+
+    .about-shoes > .show-shoes > .show-img > .card > img {
+        width: 80%;
+        height: 350px;
+        margin: auto;
+    }
+
+    .about-shoes-top > .description {
+        padding: 0;
+    }
+
+/* About shoes end */
+
+
+
+   
 
 
 
@@ -234,9 +314,45 @@ ul > li {
    /* About us start */
     .about-us {
      width: 100%;
-     height:860px;
+     height:1150px;
+     background-color: #00d084;
+   
      
     }
+    .about-us > .bottom > .show-about-us{
+       margin-top: -250px;
+       padding: 10px 10px;
+    }
+
+
+    /* About shoes sart */
+ 
+    .about-shoes {
+        width: 100%;
+        height: 1200px;
+        margin-top: 20px;
+        padding: 0px;
+        background-color: var(--color--white-old); 
+    }
+
+    .about-shoes > .show-shoes{
+        margin-top: 40px;
+    }
+
+    .about-shoes > .show-shoes > .show-img > .card > img {
+        width: 80%;
+        height: 350px;
+        margin: auto;
+    }
+
+    .about-shoes-top > .description {
+        padding: 0;
+    }
+
+   /* About shoes end */
+
+
+
 
 
 }
